@@ -1,3 +1,3 @@
 #!/bin/bash
-# Makes a request to 0.0.0.0:5000/catch_me that gets the message "You got me!".
-curl -sL -X PUT -H "Origin: HolbertonSchool" -d "user_id=98" 0.0.0.0:5000/catch_me
+# PUT METHOD is allowed, we must follow redirections, we should come from HolbertonSchool and our userid should be user_id = 98
+curl -sLX PUT -H "origin: HolbertonSchool" -d "user_id=98" 0.0.0.0:5000/catch_me
